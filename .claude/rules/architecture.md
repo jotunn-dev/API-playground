@@ -30,7 +30,7 @@ backend/
     History/         # per use case
     MockEndpoints/   # optional, per use case
   Shared/
-    Database/        # SQLite context, migrations, persistence helpers
+    Database/        # MSSQL context, migrations, persistence helpers
     Security/        # JWT, password hashing, SSRF guards
     Http/            # outbound HTTP execution helpers (IHttpClientFactory wiring)
     Results/         # common result/error handling (Result<T>, error → HTTP mapping)
@@ -52,7 +52,7 @@ backend/
 `Shared/` is **only** for cross-cutting infrastructure: database access, auth/JWT, HTTP execution, common result/error handling, and validation helpers. Anything feature-specific stays in the feature's use-case folder — do not grow `Shared/` into a dumping ground.
 
 - Use `IHttpClientFactory` / `HttpClient` for outbound requests — never `new HttpClient()` per call.
-- Persistence via SQLite, accessed through `Shared/Database`.
+- Persistence via MSSQL, accessed through `Shared/Database`.
 - Cross-cutting concerns (auth, security guards, validation, result mapping) are reused from `Shared/`, not reimplemented per feature.
 
 ## Frontend (React + TypeScript + Vite)

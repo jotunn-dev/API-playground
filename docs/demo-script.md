@@ -4,7 +4,7 @@ A click-by-click walkthrough of the core vertical slice. This is the target expe
 
 ## Prerequisites _(pending M1)_
 
-- Backend running locally (ASP.NET Core Minimal API + SQLite).
+- Backend running locally (ASP.NET Core Minimal API + MSSQL).
 - Frontend running locally (Vite dev server).
 - A target URL to call. In **dev mode**, a local API is the intended target (e.g. your own `http://localhost:5000/...` ASP.NET API). A public test API (httpbin-style echo) also works.
 

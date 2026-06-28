@@ -42,9 +42,9 @@ It is **not** a full Postman clone and **not** Swagger. The goal is one strong M
 
 - **Security:** all controls in [.claude/rules/security.md](../.claude/rules/security.md) — timeout, max response size, http/https only, untrusted-input handling, no HTML rendering, sensitive-header masking, documented SSRF risk.
 - **Architecture:** feature-based vertical slice / modular monolith — see [.claude/rules/architecture.md](../.claude/rules/architecture.md).
-- **Storage:** SQLite.
+- **Storage:** MSSQL.
 - **Tests:** backend tests for request execution, auth, saved requests, history, and cURL parser (if built); frontend tests for critical UI behavior.
-- **Tech stack:** ASP.NET Core Minimal API; React + TypeScript + Vite; axios; SQLite; JWT.
+- **Tech stack:** ASP.NET Core Minimal API; React + TypeScript + Vite; axios; MSSQL; JWT.
 
 ## Explicitly out of scope (MVP)
 

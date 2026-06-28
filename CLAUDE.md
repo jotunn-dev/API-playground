@@ -19,7 +19,7 @@ This is **not** a Postman clone and **not** Swagger. It is one strong MVP vertic
 - **Backend:** ASP.NET Core / .NET, Minimal API.
 - **Frontend:** React + TypeScript + Vite, axios.
 - **Backend HTTP client:** `IHttpClientFactory` / `HttpClient`.
-- **Storage:** SQLite.
+- **Storage:** MSSQL.
 - **Auth:** JWT register/login. JWT stored in `localStorage` (MVP), attached via axios interceptor.
 - **Architecture:** feature-based vertical slice / modular monolith.
 

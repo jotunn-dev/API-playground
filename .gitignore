@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 # API Playground — .gitignore
-# Stack: ASP.NET Core (.NET) backend + React/TypeScript/Vite frontend + SQLite
+# Stack: ASP.NET Core (.NET) backend + React/TypeScript/Vite frontend + MSSQL
 # ---------------------------------------------------------------------------
 
 # =========================
@@ -98,14 +98,11 @@ lerna-debug.log*
 *.tsbuildinfo
 
 # =========================
-# SQLite database files
+# MSSQL / LocalDB database files
 # =========================
-*.db
-*.db-shm
-*.db-wal
-*.sqlite
-*.sqlite3
-*.db3
+*.mdf
+*.ldf
+*.ndf
 
 # =========================
 # Environment / secrets
